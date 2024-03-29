@@ -7,7 +7,7 @@ import os
 import matplotlib.pyplot as plt
 
 class HotdogOrNotDataset(Dataset):
-    def __init__(self, folder):
+    def __init__(self, folder, transform=None):
         self.folder = folder
         self.transform = transform
         self.images = tuple(os.listdir(folder))
@@ -34,10 +34,7 @@ class HotdogOrNotDataset(Dataset):
             img = self.transform(img)
         return img, label, img_id
     
-transform = transforms.Compose([
-    transforms.Resize((224, 224)),
-    transforms.ToTensor(), 
-])
+
 
 def visualize_samples(dataset, indices, title=None, img_titles=None, count=10):
     # visualize random 10 samples
