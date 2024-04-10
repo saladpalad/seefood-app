@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I1K-69-b2t">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="seefoodv3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotdog_bg" translatesAutoresizingMaskIntoConstraints="NO" id="7RA-Sj-mAj" userLabel="hotdog_bg">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="JpH-9u-gcq"/>
+                                    <constraint firstAttribute="width" constant="240" id="LxF-4a-KaH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jian-yang" translatesAutoresizingMaskIntoConstraints="NO" id="RXd-sp-vsM">
+                                <rect key="frame" x="75" y="222" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-AU-Drc">
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n7-i0-sz9">
+                                <rect key="frame" x="55" y="68" width="281" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="dbv-fe-CoM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.83529411760000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7RA-Sj-mAj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CV-S0-Ng9"/>
+                            <constraint firstItem="Hbk-AU-Drc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7SJ-RU-fWf"/>
+                            <constraint firstItem="8n7-i0-sz9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fbr-IB-q7L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hbk-AU-Drc" secondAttribute="bottom" id="HpS-2M-82B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8n7-i0-sz9" secondAttribute="trailing" id="L9c-zh-IC1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hbk-AU-Drc" secondAttribute="trailing" id="Thq-oV-uPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8n7-i0-sz9" secondAttribute="bottom" constant="520" id="c2p-6d-sne"/>
+                            <constraint firstItem="7RA-Sj-mAj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oFM-mK-8s9"/>
+                            <constraint firstItem="Hbk-AU-Drc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p9E-1p-XdK"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hH9-4r-VVr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="zPp-UN-ZCR">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="1Da-dI-eDZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="zPp-UN-ZCR" id="Vaq-vv-maj"/>
+                        <outlet property="imageView" destination="Hbk-AU-Drc" id="xHl-yr-g7p"/>
+                        <outlet property="topBarImageView" destination="8n7-i0-sz9" id="FHA-NU-p2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.76923076923072" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VR9-IZ-EU0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1K-69-b2t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vsm-cF-t2j">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BYF-io-9PP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBn-Qq-YRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotdog_bg" width="612" height="612"/>
+        <image name="jian-yang" width="425" height="428"/>
+    </resources>
+</document>
