@@ -1,3 +1,6 @@
 ### THE ULTIMATE APP TO FIND OUT WHAT FOOD YOU ARE EATING
 ### SEEFOOD APP DEMO:
-![65F3A2E2-F58F-45DE-9E74-97227DFE35F7_1_106_c](https://github.com/saladpalad/seefood-app/assets/59659804/db96123d-35d3-4eac-b56f-61fe92ade867)
+
+
+https://github.com/saladpalad/seefood-app/assets/59659804/88a7aca2-9443-4b02-b02a-fa3d87a812cb
+
